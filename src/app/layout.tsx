@@ -14,8 +14,9 @@ export default function RootLayout({
 				className={`${inter.variable} ${instrumentSerif.variable} antialiased`}
 			>
 				<NavBar />
-				<main className="flex items-center justify-items-center min-h-screen gap-16 sm:p-20 font-[family-name:var(--font-inter)]"></main>
-				{children}
+				<main className="w-full max-w-[960px] mx-auto py-2 px-4 sm:flex sm:items-center sm:justify-between bg-white/5 min-h-screen">
+					{children}
+				</main>
 			</body>
 			<PrelineScript />
 		</html>

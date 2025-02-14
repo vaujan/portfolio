@@ -1,4 +1,4 @@
-import Image from "next/image";
+import PopoverDemo from "./components/PopoverDemo";
 
 export default function Home() {
 	return (
@@ -15,6 +15,7 @@ export default function Home() {
 					</span>{" "}
 					for breakfast
 				</h1>
+				<PopoverDemo />
 			</main>
 		</>
 	);

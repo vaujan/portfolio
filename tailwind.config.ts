@@ -1,6 +1,5 @@
-import { collectRoutesUsingEdgeRuntime } from "next/dist/build/utils";
 import type { Config } from "tailwindcss";
-
+import colors from "tailwindcss/colors";
 export default {
 	darkMode: "class",
 	content: [
@@ -11,8 +10,8 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				background: "var(--background)",
-				foreground: "var(--foreground)",
+				primary: colors.cyan,
+				secondary: colors.stone,
 			},
 		},
 	},

@@ -1,6 +1,6 @@
 "use client";
-import { Button, Theme } from "@radix-ui/themes";
 import { useState } from "react";
+import Button from "./Button";
 
 const ThemeSwitcher = () => {
 	const [isDark, setIsDark] = useState(true);
@@ -13,7 +13,7 @@ const ThemeSwitcher = () => {
 	};
 
 	return (
-		<Button variant="soft" size="1" onClick={handleToggleDarkMode}>
+		<Button onClick={handleToggleDarkMode}>
 			Switch to {isDark ? "light" : "dark"}
 		</Button>
 	);

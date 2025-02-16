@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@radix-ui/colors':
+        specifier: ^3.0.0
+        version: 3.0.0
       '@radix-ui/react-icons':
         specifier: ^1.3.2
         version: 1.3.2(react@19.0.0)
@@ -20,6 +23,9 @@ importers:
       lucide:
         specifier: ^0.475.0
         version: 0.475.0
+      monorepo:
+        specifier: github:radix-ui/themes
+        version: https://codeload.github.com/radix-ui/themes/tar.gz/497295f884fe1b73b81fd259a2a767da658bc1f5
       next:
         specifier: 15.1.7
         version: 15.1.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -1883,6 +1889,10 @@ packages:
   minipass@7.1.2:
     resolution: {integrity: sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw==}
     engines: {node: '>=16 || 14 >=14.17'}
+
+  monorepo@https://codeload.github.com/radix-ui/themes/tar.gz/497295f884fe1b73b81fd259a2a767da658bc1f5:
+    resolution: {tarball: https://codeload.github.com/radix-ui/themes/tar.gz/497295f884fe1b73b81fd259a2a767da658bc1f5}
+    version: 0.0.0
 
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
@@ -4476,6 +4486,8 @@ snapshots:
   minimist@1.2.8: {}
 
   minipass@7.1.2: {}
+
+  monorepo@https://codeload.github.com/radix-ui/themes/tar.gz/497295f884fe1b73b81fd259a2a767da658bc1f5: {}
 
   ms@2.1.3: {}
 

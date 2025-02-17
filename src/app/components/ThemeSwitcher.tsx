@@ -1,9 +1,9 @@
 "use client";
+import clsx from "clsx";
 import { useState } from "react";
-import Button from "./Button";
 
 const ThemeSwitcher = () => {
-	const [isDark, setIsDark] = useState(true);
+	const [isDark, setIsDark] = useState(false);
 
 	const handleToggleDarkMode = () => {
 		setIsDark(!isDark);
@@ -13,9 +13,14 @@ const ThemeSwitcher = () => {
 	};
 
 	return (
-		<Button onClick={handleToggleDarkMode}>
+		<button
+			onClick={handleToggleDarkMode}
+			className={clsx(
+				"font-medium text-secondary-500 dark:text-secondary-400 text-sm"
+			)}
+		>
 			Switch to {isDark ? "light" : "dark"}
-		</Button>
+		</button>
 	);
 };
 

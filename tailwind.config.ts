@@ -10,7 +10,7 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				primary: colors.cyan,
+				primary: colors.neutral,
 				secondary: colors.stone,
 			},
 		},

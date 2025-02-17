@@ -4,8 +4,8 @@
 
 import { useEffect, useState } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
-import Image from "next/image";
-import { geist } from "../fonts";
+import { geist, garamond } from "../fonts";
+import clsx from "clsx";
 
 function Nav() {
 	const [isHidden, setIsHidden] = useState(false);
@@ -50,14 +50,15 @@ function Nav() {
 						<div className="flex">
 							{/* Your Logo or Brand Name */}
 							<div className="flex items-center flex-shrink-0">
-								<Image
-									width={28}
-									height={28}
-									src={"shell.svg"}
-									alt="Circular logo"
-									className="dark:invert text-black"
-								/>
+								<div
+									className={clsx(
+										`${garamond.className} text-semibold h-8 w-8 hover:bg-neutral-100/5`
+									)}
+								>
+									π
+								</div>
 							</div>
+
 							<div className="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
 								{/* Static Links */}
 								{navigations.map((link) => (
